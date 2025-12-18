@@ -96,3 +96,25 @@
   color: var(--md-default-fg-color--light);
   margin-top: 1em;
 }
+
+
+
+.status-email-button {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 0.3em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.status-email-button:hover {
+  background: #1976d2;
+}
+
+.status-email-button:active {
+  transform: scale(0.98);
+}
