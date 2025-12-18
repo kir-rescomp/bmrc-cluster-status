@@ -1,11 +1,11 @@
-site_name: KIR mkdocs-material Supplementary and Themes
+site_name: BMRC Cluster Status
 site_author: The Kennedy Institute of Rheumatology, NDORMS, University of Oxford
 site_dir: public
-site_url: "https://kir-rescomp.github.io/mkdocs-material-supplementary/"
+site_url: "https://kir-rescomp.github.io/bmrc-cluster-status/"
 
 #Repository information
-repo_name:  kir-rescomp/mkdocs-material-supplementary 
-repo_url: https://github.com/kir-rescomp/mkdocs-material-supplementary
+repo_name:  kir-rescomp/bmrc-cluster-status
+repo_url: https://github.com/kir-rescomp/bmrc-cluster-status
 
 
 theme:
