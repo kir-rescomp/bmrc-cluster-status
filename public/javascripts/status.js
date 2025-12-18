@@ -10,21 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .toUpperCase();       // Convert to uppercase
   }
   
-  // Determine the correct path based on current location
-  function getStatusPath() {
-    const path = window.location.pathname;
-    
-    // If we're at the root index page
-    if (path.endsWith('/') || path.endsWith('/index.html')) {
-      return 'status/current.json';
-    }
-    // If we're in a subdirectory
-    else {
-      return '../status/current.json';
-    }
-  }
-  
-  fetch(getStatusPath())
+  fetch('../status/current.json')
     .then(response => {
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       return response.json();
