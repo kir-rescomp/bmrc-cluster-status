@@ -2,7 +2,6 @@
   <img src="./images/cluster_status.png"/>
 </p>
 
-# 6-Cluster Status
 
 <div id="cluster-status">
   <p>Loading status...</p>
