@@ -4,8 +4,8 @@
     {"name": "Login/Head Nodes", "status": "major-outage"},
     {"name": "Submitting new HPC jobs", "status": "partial-outage"},
     {"name": "Job running on HPC", "status": "partial-outage"},
-    {"name": "GPU nodes", "status": "partial-outage"},
-    {"name": "HPC Storage", "status": "operational"},
+    {"name": "CPU/GPU nodes", "status": "partial-outage"},
+    {"name": "HPC Storage", "status": "major-outage"},
     {"name": "BMRC OpenOnDemand", "status": "partial-outage"}
 
   ],

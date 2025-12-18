@@ -73,3 +73,37 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error('Error loading status:', error);
     });
 });
+
+
+function createEmailBody(data) {
+  let body = "Current Cluster Status\n";
+  body += "=".repeat(50) + "\n\n";
+  
+  data.services.forEach(service => {
+    body += `${service.name}: ${formatStatusText(service.status)}\n`;
+  });
+  
+  if (data.upcoming_maintenance && data.upcoming_maintenance.length > 0) {
+    body += "\n" + "=".repeat(50) + "\n";
+    body += "Upcoming Maintenance:\n\n";
+    data.upcoming_maintenance.forEach(maintenance => {
+      body += `Date: ${maintenance.date}\n`;
+      body += `Service: ${maintenance.service}\n`;
+      body += `Description: ${maintenance.description}\n\n`;
+    });
+  }
+  
+  const lastUpdated = new Date(data.last_updated).toLocaleString();
+  body += "\n" + "=".repeat(50) + "\n";
+  body += `Last updated: ${lastUpdated}\n`;
+  
+  return encodeURIComponent(body);
+}
+
+function sendStatusEmail(data) {
+  const recipient = "hpc-admin@example.ac.uk"; // Change this to your email
+  const subject = encodeURIComponent("Cluster Status Update - " + new Date().toLocaleDateString());
+  const body = createEmailBody(data);
+  
+  window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+}
