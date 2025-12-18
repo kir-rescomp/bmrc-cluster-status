@@ -10,7 +10,7 @@ repo_url: https://github.com/kir-rescomp/bmrc-cluster-status
 
 theme:
   name: material
-  logo: images/kir_oxford_combined_logo.png
+  logo: images/kir_techincal_insights_essays_favicon_grayscale_color_stripes.svg
   favicon: images/kir_standalone_logo.png 
    # 404 page
   static_templates:
@@ -129,3 +129,4 @@ extra_css:
   - stylesheets/status.css
   - stylesheets/side-bar.css
   - stylesheets/indexpage_featured_scroll_behaviour.css
+  - stylesheets/background_colors.css
