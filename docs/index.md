@@ -1,5 +1,6 @@
+<h1></h1>
 <p align="center">
-  <img src="./images/cluster_status.png"/>
+  <img src="./images/cluster_status.png" width="500"/>
 </p>
 
 
