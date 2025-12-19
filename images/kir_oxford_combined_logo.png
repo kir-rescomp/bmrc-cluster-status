@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inkscape Output</title>
+</head>
+<body>
+    <canvas id='canvas' width='451' height='62'></canvas>
+    <script>
+    var ctx = document.getElementById("canvas").getContext("2d");
+    	
+// #layer15
+	
+// #rect7
+	ctx.beginPath();
+	ctx.fillStyle = 'rgb(232, 172, 40)';
+	ctx.lineWidth = 0.061460;
+	ctx.rect(39.784023, 27.442860, 46.766331, 10.525423);
+	ctx.fill();
+	
+// #rect7-2
+	ctx.beginPath();
+	ctx.fillStyle = 'rgb(0, 0, 48)';
+	ctx.lineWidth = 0.058932;
+	ctx.rect(46.256622, 16.954905, 42.999413, 10.525423);
+	ctx.fill();
+	
+// #layer3
+	
+// #layer1
+	
+// #text1
+	ctx.fillStyle = 'rgb(246, 246, 246)';
+	ctx.lineWidth = 0.070114;
+	ctx.font = "6.35px "Noto Sans Old Permic"";
+	ctx.fillText("KENNEDY", 12.184461, 55.316105);
+	
+// #layer2
+	
+// #text2
+	ctx.fillStyle = 'rgb(88, 88, 88)';
+	ctx.lineWidth = 0.070114;
+	ctx.font = "2.11667px "Noto Sans Old Permic"";
+	ctx.fillText("INSTITUTE OF RHEUMATOLOGY  | NDORMS", 1.158261, 58.018715);
+	
+// #layer6
+
+    </script>
+</body>
+</html>
